@@ -1918,7 +1918,7 @@
             },
 
             cookieCommand: {
-                command: 'cookie',
+                command: 'zoeira',
                 rank: 'user',
                 type: 'startsWith',
                 getCookie: function (chat) {
