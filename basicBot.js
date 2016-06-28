@@ -99,7 +99,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/basicBot/source/master/lang/langIndex.json", function (json) {
+        $.get("https://rawgit.com/B1G-B0SS/Exercito-Bot/master/lang/langIndex.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -253,8 +253,8 @@
             chatLink: "https://rawgit.com/B1G-B0SS/Exercito-Bot/master/lang/pt.json",
             scriptLink: "https://rawgit.com/B1G-B0SS/Exercito-Bot/master/basicBot.js",
             roomLock: false, // Requires an extension to re-load the script
-            startupCap: false, // 1-200
-            startupVolume: false, // 0-100
+            startupCap: 100, // 1-200
+            startupVolume: 50, // 0-100
             startupEmoji: true, // true or false
             autowoot: true,
             autoskip: false,
@@ -306,7 +306,7 @@
             website: null,
             intervalMessages: [],
             messageInterval: 5,
-            songstats: true,
+            songstats: false,
             commandLiteral: "!",
             blacklists: {
                 NSFW: "https://rawgit.com/basicBot/custom/master/blacklists/NSFWlist.json",
