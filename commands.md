@@ -1,104 +1,89 @@
-Comandos:
-=========
+# Lista de comandos
 
-X especifique um numero
-algo entre ( ) são opicionais
+- **X** especifique um número
+- Palavras entre **( )** são opcionais
 
+### Coordenador
 
-Coordenador
--------
+| Comando | Argumento | Descrição |
+|:-------:|:---------:|:-----------:|
+| !limitarafk | X | configura o tempo limite de afk. |
+| !segurança+ | — | ative o segurança+. |
+| !limparchat | — | limpa completamente o chat. |
+| !ciclo | — | ativa/desativa o ciclo dos DJs. |
+| !recarregar | — | recarrega a página que está o bot. |
+| !usercommands | — | ative/desativa os comandos de usuários. |
+| !voteskip | (X) | quando nenhum número é especificado, volta para o limite padrão (6). Quando (X) é especificado, o limite de meh's se torna esse número. |
 
-|Comando | Argumento |  Descrição |
-|:------:|:---------:|:--------------------------------------:|
-|!afklimit | X | seta o tempo maximo de AFK |
-|!clearchat | |limpa todo o chat |
-|!cycle | | ativa/desativa o ciclo de dj |
-|!refresh | | recarrega o bot |
-|!usercmdcd | X | coloca um delay para comando de usuarios cinzas |
-|!usercommands | | ativa/desativa comandos de usuarios cinzas |
+### Segurança+
 
-Segurança+
---------
+| Comandos | Argumento | Descrição |
+|:-------:|:---------:|:-----------:|
+| !adicionar | @nick | adiciona o usuário a lista de espera. |
+| !removerafks | — | ativa/desativa a checagem dos AFKs. |
+| !autoskip | — | pula a música automáticamente quando termina (use quando acontecer o bug das músicas não pularem automáticamente). |
+| !xiudeposito | @nick | deletar todas as mensagens de um membro específico. |
+| !trancar | — | tranca a lista de espera. |
+| !meh | — | faz o bot dar meh na música atual. |
+| !mover | @nick (X) | move o usuário para uma posição X na lista de espera, a posição padrão é 1. |
+| !remover | @nick | remove o usuário da lista de espera. |
+| !rodaroda | — | inicia a roleta. |
+| !trocar | @nick1 @nick2 | troca a posição de 2 membros na lista de espera. |
+| !destravar | — | destrava a lista de espera. |
+| !woot / !like | — | faz o bot dar woot na música atual. |
 
-|Commando | Argumento |  Descrição |
-|:------:|:---------:|:--------------------------------------:|
-|!add | @usuario | adiciona usuarios a fila de espera |
-|!afkremoval | | ativa a checagem de afk |
-|!autoskip | | pula as músicas automaticamente quando acabam (quando acontece o bug do video travar em 00:00) |
-|!bouncer+ | | desativa o segurança+ |
-|!clearman | @usuario | deleta o chat de um usuario expecifico |
-|!lock | | trava a lista de espera |
-|!maxlength | X | coloca um limite de duração de videos |
-|!move | @usuario (X) | move usuarios na lista de espera |
-|!remove | @usuario | remove usuarios da fila de espera |
-|!roleta | | começar a roleta |
-|!songstats | | ativa as estatiticas da música |
-|!unlock | | destrava a lista de espera |
-|!welcome | | dá bem vindo aos usuarios quando entram |
+### Segurança
 
-Segurança
--------
+| Comandos | Argumentos | Descrição |
+|:-------:|:---------:|:-----------:|
+| !ativos | (X) | mostra quantos usuários conversaram nos ultimos X minutos. Caso X não seja especificado, 60 é o tempo padrão. |
+| !resetarafks | @nick | reseta o tempo dos AFKs. |
+| !tempoafk | @nick | mostra quanto tempo o usuário esteve afk. |
+| !ban / !martelar | @nick | bane usuários por 1 dia. |
+| !commanddeletion / !cmddeletion / !cmddel | — | faz com que os comandos para o bot sejam apagados automáticamente. |
+| !dc | (@nick) | devolve a posição de um usuário que caiu. |
+| !eta / !espera | (@nick) | mostra uma estimativa de quanto tempo a pessoa irá demorar para tocar. |
+| !fs | — | força o pulo da música atual. |
+| !temponasala | @nick | mostra quanto tempo a pessoa esteve na sala. |
+| !kick | (X) | kicka um usuário da sala por X minutos, o padrão é 0.25 minutos (15 segundos). |
+| !assassinar | — | desliga o bot. |
+| !lockguard | — | toggle the lockguard. |
+| !lockskip | (motivo) | pula, trava a lista e move o DJ para 2º. |
+| !caladadeposito | @usuário/(X) | cala o usuário por X minutor caso X seja especificado, se não será permanente. |
+| !reiniciar | — | reinicia o bot. |
+| !skip / !pular | (motivo) | pula o dj e move ele novamente para 2º. |
+| !status | — | mostra o status do bot e algumas de suas configurações. |
+| !togglevoteskip | — | ative/desativa o pulo automático por meh's. |
+| !desbanir | @nick | desbane o usuário. |
+| !unmute | @nick/all | desmuta os usuários. |
+| !mediavoto | @nick | mostra a média de votos do usuário. |
 
-|Comandos | Argumentos |  Descrição |
-|:------:|:---------:|:--------------------------------------:|
-|!active | (X) | mostra quantos usuarios conversaram na ultima 1 hora |
-|!afkreset | @usuario | reseta o tempo de afk de um usuario |
-|!afktime | @usuario | mostra quanto tempo o usuario ficou afk |
-|!ban | @usuario | bane usuarios por 1 dia |
-|!blacklist / !bl | blacklistname | adiciona as músicas para a lista negra
-|!cycleguard | | ativa o cycleguard |
-|!dclookup / !dc | (@usuario) | devolve o lugar do usuario caso ele tenha caido |
-|!english | @usuario | pede para os usuarios falarem sua lingua |
-|!eta | (@usuario) | mostrará quanto tempo demorará para o usuario tocar |
-|!filter | | ativa/desativa o filtro de chat |
-|!jointime | @usuario | mostra quanto tempo o usuario esteve na sala |
-|!kick | (X) | kicka usuarios da sala, o original é 0.25 minutos (15 segundos) |
-|!kill | ||desliga o bot |
-|!lockguard | | ativa/desativa o lockguard |
-|!lockskip | (motivo) | pula o dj, e devolve seu lugar (a posição pode ser definida com !lockskippos) |
-|!lockskippos | X | define a posição que o dj será movido com o lockskip |
-|!motd | (X)/(mensagem) | quando não tem argumento definido, mandará a mensagem do dia, quando X é especificado, o MotD irá dar a todas as  X músicas mensagens |
-|!mute | @usuario (X) | mutar usuarios por X minutos, se X é expecificado. Se não ficrá com tempo indefinido (permanente) |
-|!reload | | recarrega o bot |
-|!restricteta | | ativa/desativa a restrição do ETA, usuarios cinzas só poderão usar o eta de 1 em 1 hora |
-|!sessionstats | | mostra o estatus da sessão atual |
-|!skip | | pula a música atual |
-|!status | | mostra o estatus do bot, e alguns comandos |
-|!timeguard | | ativa/desativa o timeguard |
-|!togglemotd | | ativa/desativa o motd |
-|!unban | @usuario | desbane um usuario |
-|!unmute | | descala um usuario |
-|!voteratio | @usuario | mostra as estatiticas de votos de um usuario |
+### DJ Residente
 
-DJ Residente
------------
+| Comandos | Argumento | Descrição |
+|:-------:|:---------:|:-----------:|
+| !link | — | envia o link da música atual. |
 
-|Comando | Argumentos |  Descrição |
-|:------:|:---------:|:--------------------------------------:|
-|!link | | dá o link da música atual
+### Usuário
 
-
-
-Usuario
-----
-
-|Comando | Argumentos |  Descrição |
-|:------:|:---------:|:--------------------------------------:|
-|!autowoot | | coloca o link do Origem Woot, o autowoot que recomendamos |
-|!ba | | explica sobre o que é um BA (Nome verde) |
-|!commands | | dá o link dos comandos |
-|!negragem | @usuario | faz alguma zoeira aleatoria com um usuario |
-|!dclookup / !dc | | usa o dc em si mesmo |
-|!emoji | | coloca o link dos emojis |
-|!eta | | mostra quanto tempo demora para você rodar seu video |
-|!fb | | coloca o link da página da sala |
-|!help | | coloca uma imagem para ajudar novas bichas do Plug |
-|!join | | entra na roleta caso ela esteja ligada |
-|!leave | | sai da roleta caso você tenha entrado |
-|!link | | quando os usuarios são dj's, poderão botar o link do video |
-|!op | | link das mais tocadas  |
-|!ping | | pong! |
-|!rules | | link das regras |
-|!theme | | link do tema da sala |
-|!website | | link do site da sala |
-|!youtube | | coloca o link do canal do youtube da sala |
+| Comandos | Argumento | Descrição |
+|:-------:|:---------:|:-----------:|
+| !bola / !perguntar | (mensagem) | faz uma pergunta ao bot, que então responderá com variações de Sim ou Não. |
+| !autowoot | — | envia o link do RadiantScript |
+| !ba | — | explica o que é um Embaixador da Marca. |
+| !comandos | — | gives a link to the commands. |
+| !rola | (@nick) | dá uma rola à um usuário. |
+| !dclookup / !dc | — | recupera sua posição na fila caso tenha caído. |
+| !emoji | — | envia um link com lista de emojis. |
+| !eta | — | mostra a média de tempo que demorará para o usuário tocar. |
+| !fb | — | mostra o link do grupo do Facebook. |
+| !caçafantasma | @nick | checa se o usuário está como fantasma. |
+| !gif / !giphy | (tag) | envia um gif (do giphy) relacionado a tag especificada. Envia um gif totalmente aleatório caso não tenha tag. |
+| !ajuda / !socorro | — | envia uma imagem para ajudar novatos a se localizarem no plug. |
+| !entrar | — | entra na roleta caso tenha sido iniciada. |
+| !sair | — | sai da roleta caso você tenha entrado. |
+| !link | — | quando um usuário é o DJ, dá o link da música atual. |
+| !ping | — | retorna um pong! |
+| !regras | — | coloca o link das regras. |
+| !thor | — | o usuário concorre subir à posição 1 na lista de espera, caso sejam merecedores do martelo. |
+| !youtube | — | envia o link do canal da sala. |
