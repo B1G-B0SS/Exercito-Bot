@@ -263,8 +263,8 @@
             chatLink: 'https://rawgit.com/B1G-B0SS/Exercito-Bot/master/lang/pt.json',
             scriptLink: 'https://rawgit.com/B1G-B0SS/Exercito-Bot/master/basicBot.js',
             roomLock: false, // Requires an extension to re-load the script
-            startupCap: 100, // 1-200
-            startupVolume: 50, // 0-100
+            startupCap: false, // 1-200
+            startupVolume: false, // 0-100
             startupEmoji: true, // true or false
             autowoot: true,
             autoskip: false,
@@ -1552,7 +1552,7 @@
             */
 
             activeCommand: {
-                command: ['active', 'ativos']
+                command: ['active', 'ativos'],
                 rank: 'bouncer',
                 type: 'startsWith',
                 functionality: function(chat, cmd) {
@@ -1591,7 +1591,7 @@
             },
 
             addCommand: {
-                command: ['add', 'adicionar']
+                command: ['add', 'adicionar'],
                 rank: 'mod',
                 type: 'startsWith',
                 functionality: function(chat, cmd) {
@@ -1619,7 +1619,7 @@
             },
 
             afklimitCommand: {
-                command: ['afklimit', 'limitarafk']
+                command: ['afklimit', 'limitarafk'],
                 rank: 'manager',
                 type: 'startsWith',
                 functionality: function(chat, cmd) {
@@ -1645,7 +1645,7 @@
             },
 
             afkremovalCommand: {
-                command: ['afkremoval', 'removerafks']
+                command: ['afkremoval', 'removerafks'],
                 rank: 'mod',
                 type: 'exact',
                 functionality: function(chat, cmd) {
@@ -1674,7 +1674,7 @@
             },
 
             afkresetCommand: {
-                command: ['afkreset', 'resetarafks']
+                command: ['afkreset', 'resetarafks'],
                 rank: 'bouncer',
                 type: 'startsWith',
                 functionality: function(chat, cmd) {
@@ -1700,7 +1700,7 @@
             },
 
             afktimeCommand: {
-                command: ['afktime', 'tempoafk']
+                command: ['afktime', 'tempoafk'],
                 rank: 'bouncer',
                 type: 'startsWith',
                 functionality: function(chat, cmd) {
@@ -1843,7 +1843,7 @@
             },
 
             banCommand: {
-                command: ['ban', 'martelar']
+                command: ['ban', 'martelar'],
                 rank: 'bouncer',
                 type: 'startsWith',
                 functionality: function(chat, cmd) {
@@ -1941,7 +1941,7 @@
             },
 
             bouncerPlusCommand: {
-                command: ['bouncer+', 'segurança+']
+                command: ['bouncer+', 'segurança+'],
                 rank: 'manager',
                 type: 'exact',
                 functionality: function(chat, cmd) {
@@ -1998,7 +1998,7 @@
             },
 
             clearchatCommand: {
-                command: ['clearchat', 'limparchat']
+                command: ['clearchat', 'limparchat'],
                 rank: 'manager',
                 type: 'exact',
                 functionality: function(chat, cmd) {
@@ -2056,7 +2056,7 @@
             },
 
             commandsCommand: {
-                command: ['commands', 'comandos]'
+                command: ['commands', 'comandos'],
                 rank: 'user',
                 type: 'exact',
                 functionality: function(chat, cmd) {
@@ -2113,7 +2113,7 @@
             },
 
             cycleCommand: {
-                command: ['cycle', 'ciclo']
+                command: ['cycle', 'ciclo'],
                 rank: 'manager',
                 type: 'exact',
                 functionality: function(chat, cmd) {
@@ -2251,7 +2251,7 @@
             */
 
             deletechatCommand: {
-                command: ['deletechat', 'caladadeposito']
+                command: ['deletechat', 'caladadeposito'],
                 rank: 'mod',
                 type: 'startsWith',
                 functionality: function(chat, cmd) {
@@ -2352,7 +2352,7 @@
             },
 
             etaCommand: {
-                command: ['eta', 'demora', 'espera']
+                command: ['eta', 'demora', 'espera'],
                 rank: 'user',
                 type: 'startsWith',
                 functionality: function(chat, cmd) {
@@ -2456,7 +2456,7 @@
             },
 
             ghostbusterCommand: {
-                command: ['ghostbuster', 'caçafantasma']
+                command: ['ghostbuster', 'caçafantasma'],
                 rank: 'user',
                 type: 'startsWith',
                 functionality: function(chat, cmd) {
@@ -2558,7 +2558,7 @@
             },
 
             helpCommand: {
-                command: ['help', 'ajuda', 'socorro']
+                command: ['help', 'ajuda', 'socorro'],
                 rank: 'user',
                 type: 'exact',
                 functionality: function(chat, cmd) {
@@ -2599,7 +2599,7 @@
             },
 
             joinCommand: {
-                command: ['join', 'entrar']
+                command: ['join', 'entrar'],
                 rank: 'user',
                 type: 'exact',
                 functionality: function(chat, cmd) {
@@ -2751,7 +2751,7 @@
             },
 
             leaveCommand: {
-                command: ['leave', 'sair']
+                command: ['leave', 'sair'],
                 rank: 'user',
                 type: 'exact',
                 functionality: function(chat, cmd) {
@@ -2770,7 +2770,7 @@
             },
 
             linkCommand: {
-                command: ['link', 'zelda']
+                command: ['link', 'zelda'],
                 rank: 'user',
                 type: 'exact',
                 functionality: function(chat, cmd) {
@@ -2806,7 +2806,7 @@
             },
 
             lockCommand: {
-                command: ['lock', 'trancar']
+                command: ['lock', 'trancar'],
                 rank: 'mod',
                 type: 'exact',
                 functionality: function(chat, cmd) {
@@ -3005,7 +3005,7 @@
             },
 
             mehCommand: {
-                command: ['meh', 'deslike']
+                command: ['meh', 'deslike'],
                 rank: 'mod',
                 type: 'exact',
                 functionality: function(chat, cmd) {
@@ -3045,7 +3045,7 @@
             },
 
             moveCommand: {
-                command: ['move', 'mover']
+                command: ['move', 'mover'],
                 rank: 'mod',
                 type: 'startsWith',
                 functionality: function(chat, cmd) {
@@ -3087,7 +3087,7 @@
             },
 
             muteCommand: {
-                command: ['mute', 'caladadeposito']
+                command: ['mute', 'caladadeposito'],
                 rank: 'bouncer',
                 type: 'startsWith',
                 functionality: function(chat, cmd) {
@@ -3193,7 +3193,7 @@
             },
 
             refreshCommand: {
-                command: ['refresh', 'recarregar']
+                command: ['refresh', 'recarregar'],
                 rank: 'manager',
                 type: 'exact',
                 functionality: function(chat, cmd) {
@@ -3212,7 +3212,7 @@
             },
 
             reloadCommand: {
-                command: ['reload', 'reiniciar']
+                command: ['reload', 'reiniciar'],
                 rank: 'bouncer',
                 type: 'exact',
                 functionality: function(chat, cmd) {
@@ -3232,7 +3232,7 @@
             },
 
             removeCommand: {
-                command: ['remove', 'remover']
+                command: ['remove', 'remover'],
                 rank: 'mod',
                 type: 'startsWith',
                 functionality: function(chat, cmd) {
@@ -3292,7 +3292,7 @@
             },
 
             rouletteCommand: {
-                command: ['roulette', 'roleta', 'rodaroda', 'rodamrodam']
+                command: ['roulette', 'roleta', 'rodaroda', 'rodamrodam'],
                 rank: 'mod',
                 type: 'exact',
                 functionality: function(chat, cmd) {
@@ -3307,7 +3307,7 @@
             },
 
             rulesCommand: {
-                command: ['rules', 'regras', 'leis']
+                command: ['rules', 'regras', 'leis'],
                 rank: 'user',
                 type: 'exact',
                 functionality: function(chat, cmd) {
@@ -3570,7 +3570,7 @@
             },
 
             swapCommand: {
-                command: ['swap', 'trocar']
+                command: ['swap', 'trocar'],
                 rank: 'mod',
                 type: 'startsWith',
                 functionality: function(chat, cmd) {
@@ -3824,7 +3824,7 @@
             },
 
             unbanCommand: {
-                command: ['unban', 'desbanir']
+                command: ['unban', 'desbanir'],
                 rank: 'bouncer',
                 type: 'startsWith',
                 functionality: function(chat, cmd) {
@@ -3856,7 +3856,7 @@
             },
 
             unlockCommand: {
-                command: ['unlock', 'destravar']
+                command: ['unlock', 'destravar'],
                 rank: 'mod',
                 type: 'exact',
                 functionality: function(chat, cmd) {
@@ -3869,7 +3869,7 @@
             },
 
             unmuteCommand: {
-                command: ['unmute', 'descalar']
+                command: ['unmute', 'descalar'],
                 rank: 'bouncer',
                 type: 'startsWith',
                 functionality: function(chat, cmd) {
@@ -3916,7 +3916,7 @@
             },
 
             uptimeCommand: {
-                command: ['uptime', 'tempoativo']
+                command: ['uptime', 'tempoativo'],
                 rank: 'bouncer',
                 type: 'exact',
                 functionality: function(chat, cmd) {
@@ -3982,7 +3982,7 @@
             },
 
             voteratioCommand: {
-                command: ['voteratio', 'mediavoto']
+                command: ['voteratio', 'mediavoto'],
                 rank: 'bouncer',
                 type: 'startsWith',
                 functionality: function(chat, cmd) {
@@ -4170,7 +4170,7 @@
             },
 
             wootCommand: {
-                command: ['woot', 'like']
+                command: ['woot', 'like'],
                 rank: 'mod',
                 type: 'exact',
                 functionality: function(chat, cmd) {
