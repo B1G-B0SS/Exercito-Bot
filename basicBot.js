@@ -252,7 +252,7 @@
         loggedInID: null,
         scriptLink: 'https://rawgit.com/basicBot/source/master/basicBot.js',
         cmdLink: 'https://github.com/B1G-B0SS/Exercito-Bot/blob/master/commands.md',
-        chatLink: 'https://rawgit.com/basicBot/source/master/lang/en.json',
+        chatLink: 'https://rawgit.com/basicBot/source/master/lang/pt.json',
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
