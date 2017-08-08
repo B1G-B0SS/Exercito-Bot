@@ -2072,7 +2072,7 @@
             },
 
             cookieCommand: {
-                command: 'rola'
+                command: 'rola',
                 rank: 'user',
                 type: 'startsWith',
                 getCookie: function(chat) {
